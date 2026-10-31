@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f6">
+  <title>For Fahra ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="petals" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <span>🌸 A Little Love For You</span>
+    <button id="musicBtn" class="music-btn" aria-label="Putar musik">
+      ♫ Play Music
+    </button>
+  </header>
+
+  <main>
+    <section class="hero card" id="home">
+      <div class="sparkle">✧･ﾟ: *✧･ﾟ:* ♡ *:･ﾟ✧*:･ﾟ✧</div>
+      <div class="mascot">🐱 🎀 🐰</div>
+      <p class="eyebrow">A SPECIAL LITTLE GIFT</p>
+      <h1>Hai, <span class="pink">Fahra Ayatul Husna!</span> ♡</h1>
+      <p class="subtitle">
+        Ada sesuatu yang kecil, lucu, dan penuh sayang
+        yang ingin aku tunjukkan buat kamu.
+      </p>
+      <button class="primary" id="startBtn">
+        Buka Kejutan ♡
+      </button>
+      <p class="tiny">dibuat khusus untuk seseorang yang istimewa ✿</p>
+    </section>
+
+    <section class="card section" id="letter">
+      <p class="eyebrow">✉ A LETTER FOR YOU</p>
+      <h2>Surat Kecil Untukmu 💌</h2>
+      <div class="envelope" id="envelope">
+        <div class="envelope-icon">💌</div>
+        <p>There's a little letter inside...</p>
+        <button class="primary" id="openLetter">
+          Buka Surat ✿
+        </button>
+      </div>
+
+      <article class="letter-paper hidden" id="letterPaper">
+        <div class="letter-deco">🌷 ♡ 🌷</div>
+        <h3>Untuk Fahra tersayang,</h3>
+        <p>
+          Haii, kamu! 💗
+        </p>
+        <p>
+          Aku cuma mau bilang kalau aku senang bisa mengenalmu.
+          Terima kasih sudah menjadi bagian dari hari-hariku.
+          Hal-hal sederhana terasa lebih menyenangkan ketika
+          ada kamu untuk berbagi cerita.
+        </p>
+        <p>
+          Semoga kamu selalu punya alasan untuk tersenyum,
+          selalu dikelilingi hal-hal baik, dan tidak lupa
+          bahwa kamu adalah seseorang yang berharga.
+        </p>
+        <p>
+          Kalau suatu hari kamu merasa lelah, semoga kamu
+          ingat bahwa kamu tidak harus selalu sempurna.
+          Jadi dirimu sendiri juga sudah cukup. 🐰
+        </p>
+        <p class="signature">
+          Dengan banyak sayang,<br>
+          seseorang yang ingin melihatmu bahagia ♡
+        </p>
+        <button class="secondary" id="closeLetter">
+          Lipat Surat 💗
+        </button>
+      </article>
+    </section>
+
+    <section class="card section" id="memories">
+      <p class="eyebrow">📸 LITTLE MOMENTS</p>
+      <h2>Our Little Memories ♡</h2>
+      <p class="subtitle">
+        Setiap foto punya cerita kecilnya sendiri.
+      </p>
+
+      <div class="polaroid">
+        <div class="photo-frame">
+          <img id="memoryPhoto" src="assets/images/foto1.jpg"
+               alt="Foto kenangan kita">
+        </div>
+        <p class="photo-caption" id="photoCaption">
+          Kenangan manis pertama ♡
+        </p>
+        <p class="photo-counter" id="photoCounter">1 / 3</p>
+      </div>
+
+      <div class="photo-controls">
+        <button class="secondary" id="prevPhoto" aria-label="Foto sebelumnya">
+          ❮
+        </button>
+        <button class="secondary" id="nextPhoto" aria-label="Foto berikutnya">
+          ❯
+        </button>
+      </div>
+      <p class="tiny">
+        Ganti foto contoh dengan foto kenangan kalian sendiri.
+      </p>
+    </section>
+
+    <section class="card section" id="music">
+      <p class="eyebrow">🎵 OUR LITTLE PLAYLIST</p>
+      <h2>A Song For You 🎧</h2>
+      <div class="music-art">🎀 🐻 🎀</div>
+      <h3 id="trackName">Lagu favorit kita</h3>
+      <p class="subtitle">A little melody, a little love ♡</p>
+      <audio id="bgMusic" loop preload="metadata">
+        <source src="assets/music/lagu.mp3" type="audio/mpeg">
+      </audio>
+      <button class="primary" id="playerBtn">▶ Play</button>
+      <p class="tiny" id="musicStatus" aria-live="polite">
+        Tekan Play untuk memulai musik.
+      </p>
+    </section>
+
+    <section class="card section" id="quiz">
+      <p class="eyebrow">🐰 A TINY LOVE QUIZ</p>
+      <h2>Pilih Jawabanmu! 💞</h2>
+      <div class="quiz-box">
+        <div class="quiz-progress" id="quizProgress">Pertanyaan 1 dari 3</div>
+        <h3 id="question">Apa hadiah kecil yang paling manis?</h3>
+        <div id="answers" class="answers"></div>
+        <p id="quizFeedback" aria-live="polite"></p>
+        <button class="primary hidden" id="nextQuestion">
+          Lanjut ♡
+        </button>
+      </div>
+    </section>
+
+    <section class="card section final-section" id="surprise">
+      <div class="star">✨ 🌙 ✨</div>
+      <p class="eyebrow">ONE LAST LITTLE SURPRISE</p>
+      <h2>For My Favorite Person 💗</h2>
+      <p class="subtitle">
+        Ada satu pesan terakhir yang menunggumu...
+      </p>
+      <button class="primary" id="surpriseBtn">
+        Buka Pesan Rahasia 🎁
+      </button>
+      <div id="finalMessage" class="final-message hidden">
+        <div class="big-heart">💗</div>
+        <h3>Fahra, kamu istimewa!</h3>
+        <p>
+          Terima kasih sudah hadir dan membawa warna
+          tersendiri dalam cerita ini.
+        </p>
+        <p>
+          Semoga hari-harimu dipenuhi kebahagiaan,
+          tawa kecil, dan banyak hal yang kamu syukuri.
+        </p>
+        <p class="pink">You deserve all the good things. ♡</p>
+        <div class="final-deco">🌸 🐱 🎀 🐰 🌸</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ♡, just for Fahra Ayatul Husna</p>
+    <p class="tiny">A little website, a lot of affection 🌸</p>
+  </footer>
+
+  <div id="toast" class="toast" role="status"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
